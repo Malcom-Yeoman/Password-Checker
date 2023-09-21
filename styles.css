@@ -1,0 +1,77 @@
+/* CONTAINER */
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* PASSWORD */
+.password-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+input[type="password"], input[type="text"] {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-right: 40px; 
+}
+#visibilityIcon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+}
+/* PROGRESS-BAR */
+.progress {
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: red; 
+    border-radius: 5px;
+    transition: width 0.3s, background-color 0.3s; 
+}
+.progress-bar.orange {
+    background-color: orange;
+}
+.progress-bar.yellow {
+    background-color: yellow;
+}
+.progress-bar.lightgreen {
+    background-color: lightgreen;
+}
+.progress-bar.green {
+    background-color: #4CAF50;
+}
+/* CONDITION */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+li {
+    margin-bottom: 10px;
+    color: lightgray;
+    font-size: 0.9rem;
+}
+.icon {
+    margin-right: 5px;
+}
+li.valid {
+    color: #333;
+}
+li.valid .icon {
+    color: green;
+    transform: scale(1.1);
+}
